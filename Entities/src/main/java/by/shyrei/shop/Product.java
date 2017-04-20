@@ -9,6 +9,4 @@ public class Product extends AbstractEntity {
     private String description;
     private int price;
     private Category category;
-
-
 }
