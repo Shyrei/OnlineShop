@@ -7,6 +7,6 @@ public enum Status {
     NEW,
     CREATED,
     VERIFIED,
-    DELIVERED,
-    REMOVED
+    SENDED,
+    DELIVERED
 }

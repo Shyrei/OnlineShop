@@ -3,5 +3,5 @@ package by.shyrei.shop;
 /**
  * Created by Uladzimir on 20.04.2017.
  */
-public class AbstractEntity {
+public abstract class AbstractEntity {
 }

@@ -4,19 +4,18 @@
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/shop2?useSSL=false</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/shop?useSSL=false</property>
         <property name="hibernate.connection.username">shop</property>
         <property name="hibernate.connection.password">840103</property>
         <property name="show_sql">false</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <!-- property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property -->
 
-        <!--Here we are mapping Pojo class not hbm-->
-        <mapping class="by.shyrei.shop.Status"/>
-        <mapping class="by.shyrei.shop.Category"/>
-        <mapping class="by.shyrei.shop.Order"/>
-        <mapping class="by.shyrei.shop.Product"/>
+        <!--Here we are mappAbstravtEntityPojo class not hbm-->
         <mapping class="by.shyrei.shop.Role"/>
+        <mapping class="by.shyrei.shop.Product"/>
+        <mapping class="by.shyrei.shop.Order"/>
+        <mapping class="by.shyrei.shop.Category"/>
         <mapping class="by.shyrei.shop.User"/>
     </session-factory>
 </hibernate-configuration>
