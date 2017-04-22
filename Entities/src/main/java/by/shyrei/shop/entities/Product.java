@@ -1,17 +1,21 @@
-package by.shyrei.shop;
+package by.shyrei.shop.entities;
 
 import lombok.*;
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
- * Created by Uladzimir on 20.04.2017.
+ * Project OnlineShop
+ * Created on 20.04.2017.
+ * author Uladzimir
  */
+@EqualsAndHashCode(callSuper = true)
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "products")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Product extends AbstractEntity {
+public class Product extends AbstractEntity implements Serializable{
     @Id @GeneratedValue
     private Long id;
     @Column

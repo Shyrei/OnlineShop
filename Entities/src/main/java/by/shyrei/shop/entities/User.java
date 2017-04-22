@@ -1,16 +1,19 @@
-package by.shyrei.shop;
+package by.shyrei.shop.entities;
 
 import lombok.*;
 import javax.persistence.*;
 
 /**
- * Created by Uladzimir on 20.04.2017.
+ * Project OnlineShop
+ * Created on 20.04.2017.
+ * author Uladzimir
  */
+@EqualsAndHashCode(callSuper = true)
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class User extends AbstractEntity {
     @Id @GeneratedValue
     private Long id;
@@ -20,7 +23,4 @@ public class User extends AbstractEntity {
     private String password;
     @ManyToOne(cascade = CascadeType.ALL) @JoinColumn(name = "role_id")
     private Role role;
-
-    public User() {
-    }
 }

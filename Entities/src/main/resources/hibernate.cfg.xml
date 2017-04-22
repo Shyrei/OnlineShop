@@ -12,10 +12,10 @@
         <!-- property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property -->
 
         <!--Here we are mappAbstravtEntityPojo class not hbm-->
-        <mapping class="by.shyrei.shop.Role"/>
-        <mapping class="by.shyrei.shop.Product"/>
-        <mapping class="by.shyrei.shop.Order"/>
-        <mapping class="by.shyrei.shop.Category"/>
-        <mapping class="by.shyrei.shop.User"/>
+        <mapping class="by.shyrei.shop.entities.Role"/>
+        <mapping class="by.shyrei.shop.entities.Product"/>
+        <mapping class="by.shyrei.shop.entities.Order"/>
+        <mapping class="by.shyrei.shop.entities.Category"/>
+        <mapping class="by.shyrei.shop.entities.User"/>
     </session-factory>
 </hibernate-configuration>

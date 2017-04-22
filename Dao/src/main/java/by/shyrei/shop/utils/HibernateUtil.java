@@ -1,4 +1,4 @@
-package by.shyrei.shop;
+package by.shyrei.shop.utils;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

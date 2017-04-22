@@ -13,13 +13,28 @@
     <packaging>jar</packaging>
 
     <dependencies>
+
         <dependency>
             <groupId>by.shyrei.shop</groupId>
             <artifactId>Entities</artifactId>
             <version>1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
 
     </dependencies>
 
